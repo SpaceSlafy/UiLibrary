@@ -5238,7 +5238,7 @@ function UILibrary.Section:Dropdown(sett, callback)
 				if sett.Multi == true then
 					options[option] = value
 
-					functions.refreshUI()
+					functions.refreshUI()	
 				else
 					if value == true then
 						for i, v in pairs(options) do
@@ -5255,7 +5255,7 @@ function UILibrary.Section:Dropdown(sett, callback)
 					end
 				end
 
-				callback(options)
+				callback(option)
 			end
 		end
 	end
